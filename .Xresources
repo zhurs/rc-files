@@ -1,0 +1,8 @@
+URxvt.font: xft:Consolas:pixelsize=14:autohint=true:antialias=true
+URxvt.perl-ext-common: default,tabbed
+URxvt.perl-lib: /home/zhur/.urxvt/
+URxvt.loginShell: True
+URxvt.saveLines: 65535
+URxvt.mouseWheelScrollPage: True
+URxvt.title: urxvt
+URxvt.chdir: /home/zhur/

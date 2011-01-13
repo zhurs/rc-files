@@ -1,0 +1,12 @@
+#!/bin/dash -e
+
+WINTITLE=$2
+PROGNAME=$1
+
+if [ `wmctrl -l | grep -c "$WINTITLE"` != 0 ]
+then
+  wmctrl -a "$WINTITLE" &
+else
+  dash -c $PROGNAME &
+fi
+exit 0
