@@ -318,6 +318,9 @@ sub tab_key_press {
            if ($keysym == $KEY_T || $keysym == $KEY_CAP_T) {
                $self->new_tab;
                return 1;
+           } elsif ($keysym == ord('w') || $keysym == ord('W')) {
+               $tab->destroy();
+               return 1;
            } elsif ($keysym == $KEY_PG_UP || $keysym == $KEY_PG_DOWN) {
                my ($idx1) = grep $self->{tabs}[$_] == $tab, 0 .. $#{ $self->{tabs} };
                my  $idx2  = ($idx1 + ($keysym == $KEY_PG_UP ? -1 : +1)) % @{ $self->{tabs} };
