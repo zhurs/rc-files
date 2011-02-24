@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# 0x02400003 -1 0    0    1600 24   zhur-laptop Top Expanded Edge Panel
+# 0x02000024 -1 0    0    3200 1200 zhur-laptop x-nautilus-desktop
+# 0x01e00055  0 2    82   232  1146 zhur-laptop Buddy List
+# 0x04200009  0 1600 58   1600 1171 zhur-laptop zhur@zhur-laptop: ~
+# 0x02e000c4  0 1600 58   1600 1171 zhur-laptop DIRECT-10242 - Новые стратегии автобюджета | Review Request | Review Board - Mozilla Firefox
+# 0x028000c4  0 236  82   1364 1145 zhur-laptop direct-trunk - zhur@yandex-team.ru - Mozilla Thunderbird
+
+wmctrl -r 'Mozilla Thunderbird' -e 0,236,82,1364,1145
+wmctrl -r 'Mozilla Firefox' -e 0,1600,58,1600,1171
+wmctrl -r 'Buddy List' -e 0,2,82,232,1146
+
+wmctrl -r 'zhur@zhur-laptop:' -e 0,1600,58,1600,1171
+wmctrl -a 'zhur@zhur-laptop:'
+
+
+
